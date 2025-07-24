@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat With AI</title>
+  <style>
+    :root {
+      --bg-color: #f9fafb;
+      --text-color: #111827;
+      --bubble-user: #3b82f6;
+      --bubble-bot: #6b7280;
+      --input-bg: #e5e7eb;
+      --button-color: #3b82f6;
+      --button-text: #ffffff;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #111827;
+      --text-color: #f9fafb;
+      --bubble-user: #2563eb;
+      --bubble-bot: #374151;
+      --input-bg: #1f2937;
+      --button-color: #6366f1;
+      --button-text: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(to right, #6366f1, #3b82f6);
+      padding: 0.6rem 1rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    #menuToggle {
+      position: absolute;
+      left: 1rem;
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    #themeToggle {
+      position: absolute;
+      right: 1rem;
+      background-color: var(--button-color);
+      color: var(--button-text);
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 280px;
+      height: 100%;
+      background-color: var(--input-bg);
+      color: var(--text-color);
+      padding: 1rem;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      transition: left 0.4s ease-in-out;
+      overflow-y: auto;
+    }
+
+    #sidebar.open {
+      left: 0;
+    }
+
+    #sidebar h2, #sidebar h3 {
+      margin-top: 1rem;
+      color: var(--text-color);
+    }
+
+    #sidebar button.closeBtn {
+      background-color: transparent;
+      border: none;
+      font-size: 1.4rem;
+      color: var(--text-color);
+      float: right;
+      cursor: pointer;
+    }
+
+    #chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bubble {
+      padding: 0.75rem;
+      border-radius: 1rem;
+      margin: 0.5rem 0;
+      max-width: 80%;
+      word-wrap: break-word;
+    }
+
+    .user {
+      align-self: flex-end;
+      background-color: var(--bubble-user);
+      color: white;
+    }
+
+    .bot {
+      align-self: flex-start;
+      background-color: var(--bubble-bot);
+      color: white;
+    }
+
+    #input-section {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: var(--input-bg);
+      gap: 0.5rem;
+    }
+
+    #input-section input,
+    #input-section button {
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: none;
+    }
+
+    #input-section button {
+      background-color: var(--button-color);
+      color: var(--button-text);
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 0.75rem;
+      font-size: 0.875rem;
+      color: var(--text-color);
+      background-color: var(--input-bg);
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay" onclick="closeSidebar()"></div>
+
+  <header>
+    <button id="menuToggle" onclick="openSidebar()">☰</button>
+    <h1>CareConnects – Chat With AI</h1>
+    <button id="themeToggle">Dark 🖤</button>
+  </header>
+
+  <div id="sidebar">
+    <button class="closeBtn" onclick="closeSidebar()">✖</button>
+    <h2>About</h2>
+    <p><strong>Chat With AI</strong> is a lite version of <strong><a href="https://dsmultiai.vercel.app/" target="_blank">DS MULTI AI</a></strong>, 
+  developed by <strong>Sanchit</strong>. This webpage is created for educational purposes only. 
+  It allows you to chat with GPT-4 — fast, simple, and focused on delivering intelligent conversations about health. 
+  Your data is fully secured, so feel free to use this platform with confidence.
+</p>
+    <h2>Powered By</h3>
+    <ul>
+      <li><strong>Model:</strong> GPT-4</li>
+    </ul>
+    <h2>Developer</h2>
+    <p>Made with ❤️ by Sanchit</p>
+  </div>
+
+  <main id="chat-container"></main>
+
+  <div id="input-section">
+    <input type="text" id="userInput" placeholder="Ask something..." />
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <footer>Made By Sanchit 👨🏻‍💻</footer>
+
+  <script>
+    const BASE_URL = 'https://api.ashlynn-repo.tech';
+    const chatContainer = document.getElementById('chat-container');
+    const sendBtn = document.getElementById('sendBtn');
+    const userInput = document.getElementById('userInput');
+    const themeToggle = document.getElementById('themeToggle');
+    let loadingBubble = null;
+
+    function openSidebar() {
+      document.getElementById('sidebar').classList.add('open');
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById('menuToggle').style.display = 'none';
+    }
+
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('overlay').style.display = 'none';
+      document.getElementById('menuToggle').style.display = 'block';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      themeToggle.textContent = newTheme === 'dark' ? 'Light 🤍' : 'Dark 🖤';
+    });
+
+    function addMessage(content, sender = 'bot') {
+      const bubble = document.createElement('div');
+      bubble.className = `bubble ${sender}`;
+      bubble.textContent = content;
+      chatContainer.appendChild(bubble);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+      saveMessages();
+      return bubble;
+    }
+
+    async function sendMessage() {
+      const prompt = userInput.value.trim();
+      if (!prompt) return;
+
+      addMessage(prompt, 'user');
+      userInput.value = '';
+      loadingBubble = addMessage('Thinking...', 'bot');
+
+      try {
+        const res = await fetch(`${BASE_URL}/chat/?question=${encodeURIComponent(prompt)}&model=gpt-4`);
+        const data = await res.json();
+        loadingBubble.remove();
+        addMessage(data.response || 'No response.', 'bot');
+      } catch (err) {
+        console.error(err);
+        loadingBubble.remove();
+        addMessage('Error: Unable to get response.', 'bot');
+      }
+    }
+
+    function saveMessages() {
+      const bubbles = document.querySelectorAll('.bubble');
+      const messages = [];
+      bubbles.forEach(b => {
+        messages.push({ sender: b.classList.contains('user') ? 'user' : 'bot', html: b.innerHTML });
+      });
+      localStorage.setItem('ds-messages', JSON.stringify(messages));
+    }
+
+    function loadMessages() {
+      const saved = localStorage.getItem('ds-messages');
+      if (saved) {
+        const messages = JSON.parse(saved);
+        messages.forEach(msg => {
+          const div = document.createElement('div');
+          div.className = `bubble ${msg.sender}`;
+          div.innerHTML = msg.html;
+          chatContainer.appendChild(div);
+        });
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    userInput.addEventListener('keypress', e => {
+      if (e.key === 'Enter') sendMessage();
+    });
+
+   loadMessages();
+  </script>
+</body>
+</html>

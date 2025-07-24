@@ -1,0 +1,502 @@
+[
+  {
+    "name": "Asthma",
+    "image": "images/asthma.jpg",
+    "about": "A chronic condition where airways narrow and swell.",
+    "symptoms": "Shortness of breath, wheezing, chest tightness.",
+    "dos": "Use inhalers, avoid allergens.",
+    "donts": "Avoid smoke, cold air, and dust.",
+    "precautions": "Regular checkups, monitor breathing.",
+    "concern": "Frequent asthma attacks or difficulty breathing."
+  },
+  {
+    "name": "Anemia",
+    "image": "images/anemia.jpg",
+    "about": "Low red blood cells or hemoglobin in blood.",
+    "symptoms": "Fatigue, pale skin, shortness of breath.",
+    "dos": "Eat iron-rich foods, take supplements.",
+    "donts": "Avoid tea/coffee after meals.",
+    "precautions": "Routine blood checks.",
+    "concern": "Unusual tiredness or pale appearance."
+  },
+  {
+    "name": "Allergies",
+    "image": "images/allergy.jpg",
+    "about": "Immune reaction to harmless substances like pollen or dust.",
+    "symptoms": "Sneezing, itching, rashes.",
+    "dos": "Take antihistamines, avoid triggers.",
+    "donts": "Avoid self-medication.",
+    "precautions": "Allergy testing, clean environment.",
+    "concern": "Severe reactions or breathing difficulty."
+  },
+  {
+    "name": "Acne",
+    "image": "images/acne.jpg",
+    "about": "Skin condition causing pimples and blackheads.",
+    "symptoms": "Red bumps, pus-filled pimples, oily skin.",
+    "dos": "Wash face twice daily, use prescribed creams.",
+    "donts": "Don’t pop pimples or use harsh scrubs.",
+    "precautions": "Maintain skin hygiene, avoid oily cosmetics.",
+    "concern": "Severe acne or scarring."
+  },
+  {
+    "name": "Arthritis",
+    "image": "images/arthritis.jpg",
+    "about": "Joint inflammation causing pain and stiffness.",
+    "symptoms": "Swelling, pain, limited movement.",
+    "dos": "Gentle exercises, anti-inflammatory meds.",
+    "donts": "Avoid inactivity and heavy lifting.",
+    "precautions": "Healthy weight, joint care.",
+    "concern": "Persistent joint pain/swelling."
+  },
+  {
+    "name": "Back Pain",
+    "image": "images/back_pain.jpg",
+    "about": "Pain in the lower, middle, or upper back, often from poor posture or lifting.",
+    "symptoms": "Aching, stiffness, sharp or dull pain in the back.",
+    "dos": "Maintain good posture, stretch regularly, apply warm compress.",
+    "donts": "Avoid sitting too long or lifting heavy items improperly.",
+    "precautions": "Use ergonomic chairs, exercise core muscles.",
+    "concern": "Pain lasting more than a week or causing leg numbness."
+  },
+  {
+    "name": "Chickenpox",
+    "image": "images/chickenpox.jpg",
+    "about": "Mosquito-borne viral disease causing joint pain.",
+    "symptoms": "Fever, severe joint pain, rashes.",
+    "dos": "Use calamine lotion, Rest, stay hydrated, painkillers as advised.",
+    "donts": "Avoid scratching, contact with others, Don’t take aspirin without consulting doctor.",
+    "precautions": "Vaccination, avoid infected people, Mosquito control, nets, repellents.",
+    "concern": "If fever and pain persist more than a week."
+  },
+  {
+    "name": "COVID-19",
+    "image": "images/covid.jpg",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "",
+    "image": "",
+    "about": "",
+    "symptoms": "",
+    "dos": "",
+    "donts": "",
+    "precautions": "",
+    "concern": ""
+  },
+  {
+    "name": "Disease 50",
+    "image": "images/disease50.jpg",
+    "about": "Description of Disease 50.",
+    "symptoms": "Symptoms of Disease 50.",
+    "dos": "Things to do for Disease 50.",
+    "donts": "Things to avoid for Disease 50.",
+    "precautions": "Precautions for Disease 50.",
+    "concern": "  50."
+  }
+]
