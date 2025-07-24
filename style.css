@@ -174,3 +174,10 @@ footer a {
   font-weight: bold;
   border: 1px solid #0056b3;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    transform: scale(1.2);
+    width: 1000px;
+    overflow-x: auto;
+  }
+}
