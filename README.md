@@ -89,7 +89,7 @@ This project is for educational/community engagement purposes. All disease infor
 
 ## 📷 Preview
 
-![screenshot](images/asthama.png)
+![screenshot](images/acne.png)
 
 ---
 
