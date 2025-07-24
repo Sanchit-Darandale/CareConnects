@@ -22,13 +22,12 @@
 ```
 📁 careconnects/
 ├── 📁 images/              # All disease images
-├── 📁 scripts/             # JavaScript files (search, pagination, etc.)
 ├── index.html             # Home page (Page 1)
 ├── page2.html             # Page 2
 ├── ...
 ├── page10.html            # Page 10
-├── search.html            # Dedicated search page
-├── diseases.json          # All disease data (used in search.html)
+├── ask.html            # Dedicated search using ai 
+├── diseases.json          # All disease data
 ├── style.css              # Main stylesheet
 └── README.md              # Project documentation
 ```
@@ -63,22 +62,22 @@ A global search system is included in `search.html`, powered by `diseases.json`.
 ## 🤝 Contributors
 
 👨‍💻 **Team Members:**
-- [Your Name 1] – Frontend & Layout
-- [Your Name 2] – Disease Research & Content
-- [Your Name 3] – UI Enhancements
-- [Your Name 4] – Search System & Integration
+- Darandale Sanchit – Website Developer
+- Daud Rugved – Communication Leader
+- Darandale Harshal – Research Leader
+- Chaudhari Nishant – Content Manager
 
 🙌 **With support from:**
-- Government health sites (e.g., [nhp.gov.in](https://www.nhp.gov.in))
+- Government health sites
 - WHO Guidelines
 
 ---
 
 ## 📞 Government Support Contacts
 
-- **National Health Helpline (India):** 1800-180-1104
-- **COVID-19 Helpline:** 1075
-- **Health Ministry Website:** [www.mohfw.gov.in](https://www.mohfw.gov.in)
+- **National Health Helpline (India):** 
+- **COVID-19 Helpline:** 
+- **Health Ministry Website:**
 
 ---
 
@@ -90,7 +89,7 @@ This project is for educational/community engagement purposes. All disease infor
 
 ## 📷 Preview
 
-![screenshot](images/preview.png) *(Include a screenshot of your home page if available)*
+![screenshot](images/asthama.png)
 
 ---
 
