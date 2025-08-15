@@ -185,6 +185,14 @@
     });
   });
 </script>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://silentghost0.app.n8n.cloud/webhook/a6d2c28b-4307-4cf6-b8ea-098efe890055/chat'
+	});
+</script>
 <script>
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   const pageLinks = document.querySelectorAll(".pagination a");
@@ -196,14 +204,7 @@
     }
   });
 </script>
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-	createChat({
-		webhookUrl: 'https://silentghost0.app.n8n.cloud/webhook/a6d2c28b-4307-4cf6-b8ea-098efe890055/chat'
-	});
-</script>
 </body>
 </html>
+
 
