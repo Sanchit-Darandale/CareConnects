@@ -87,12 +87,6 @@ This project is for educational/community engagement purposes. All disease infor
 
 ---
 
-## 📷 Preview
-
-![screenshot](images/acne.jpg)
-
----
-
 ## 💬 Chat with AI
 
 Need quick info? Use the **Chat with AI** button to get automated help!
